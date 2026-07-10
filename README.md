@@ -158,11 +158,6 @@ Linux VPS / Oracle Cloud Always Free
   + ADMIN_TOKEN
 ```
 
-详细部署方案见：
-
-- `DEPLOYMENT_PLAN.md`
-- `FREE_DEPLOYMENT_PLAN.md`
-
 ## 注意事项
 
 - 这是轻量 MVP，不包含完整登录系统。
