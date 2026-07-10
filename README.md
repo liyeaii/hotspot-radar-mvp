@@ -50,3 +50,17 @@ Admin entry:
 ```
 
 The token is stored in the admin browser's local storage and removed from the address bar after loading.
+
+## Publish To GitHub
+
+After logging in with GitHub CLI in a normal PowerShell window:
+
+```powershell
+.\publish-github.ps1
+```
+
+Optional private repository:
+
+```powershell
+.\publish-github.ps1 -Visibility private
+```
