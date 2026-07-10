@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotspot Radar 热点信息</title>
+    <link rel="stylesheet" href="/styles.css?v=20260710-date-filter-empty" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <p class="eyebrow">AI SIGNAL OPS</p>
+            <h1>Hotspot Radar</h1>
+          </div>
+        </div>
+
+        <nav class="top-nav" aria-label="页面导航">
+          <a class="nav-link" href="/">控制台</a>
+          <a class="nav-link is-active" href="/hotspots.html">热点信息</a>
+        </nav>
+
+        <div class="top-actions">
+          <div class="status-pill" id="statusPill">等待连接</div>
+          <button id="scanBtn" class="primary-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>
+            <span>立即扫描</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="layout hotspots-layout">
+        <section class="radar-panel hotspot-panel" aria-labelledby="radarTitle">
+          <div class="panel-heading split hotspot-heading">
+            <div>
+              <p class="eyebrow">LIVE FEED</p>
+              <h2 id="radarTitle">热点信息</h2>
+            </div>
+            <div class="signal-total" aria-label="热点数量">
+              <span>共 <strong id="signalCount">0</strong> 条</span>
+            </div>
+          </div>
+          <div class="date-filter" aria-label="按抓取时间筛选热点">
+            <label for="dateFromInput">
+              <span>开始日期</span>
+              <input id="dateFromInput" type="date" />
+            </label>
+            <label for="dateToInput">
+              <span>结束日期</span>
+              <input id="dateToInput" type="date" />
+            </label>
+            <button id="clearDateFilter" class="filter-clear-button" type="button">清除区间</button>
+            <p id="dateFilterStatus">显示全部抓取时间</p>
+          </div>
+          <div class="radar-grid" id="discoveries"></div>
+        </section>
+      </main>
+    </div>
+    <script src="/hotspots.js?v=20260710-date-filter-empty" type="module"></script>
+  </body>
+</html>
