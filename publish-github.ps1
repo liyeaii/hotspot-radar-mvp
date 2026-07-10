@@ -7,6 +7,15 @@ param(
 
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
+$RepoPath = (Resolve-Path $PSScriptRoot).Path.Replace("\", "/")
+
+$safeDirectories = @(git config --global --get-all safe.directory 2>$null)
+if ($safeDirectories -notcontains $RepoPath) {
+  git config --global --add safe.directory $RepoPath
+  if ($LASTEXITCODE -ne 0) {
+    throw "Failed to mark repository as safe.directory: $RepoPath"
+  }
+}
 
 function Run {
   param(
