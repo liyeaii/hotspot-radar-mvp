@@ -8,15 +8,21 @@ param(
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 
-function Run($File, [string[]]$Args) {
-  & $File @Args
+function Run {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$File,
+    [string[]]$CommandArgs = @()
+  )
+
+  & $File @CommandArgs
   if ($LASTEXITCODE -ne 0) {
-    throw "Command failed: $File $($Args -join ' ')"
+    throw "Command failed: $File $($CommandArgs -join ' ')"
   }
 }
 
-Run "node" @("--test")
-Run "gh" @("auth", "status")
+Run -File "node" -CommandArgs @("--test")
+Run -File "gh" -CommandArgs @("auth", "status")
 
 if (-not $Owner) {
   $Owner = (gh api user --jq .login).Trim()
@@ -29,13 +35,13 @@ $origin = git remote get-url origin 2>$null
 if ($LASTEXITCODE -ne 0 -or -not $origin) {
   gh repo view $target *> $null
   if ($LASTEXITCODE -eq 0) {
-    Run "git" @("remote", "add", "origin", "https://github.com/$target.git")
+    Run -File "git" -CommandArgs @("remote", "add", "origin", "https://github.com/$target.git")
   } else {
-    Run "gh" @("repo", "create", $target, $visibilityFlag, "--source", ".", "--remote", "origin")
+    Run -File "gh" -CommandArgs @("repo", "create", $target, $visibilityFlag, "--source", ".", "--remote", "origin")
   }
 }
 
-Run "git" @("branch", "-M", "main")
-Run "git" @("push", "-u", "origin", "main")
+Run -File "git" -CommandArgs @("branch", "-M", "main")
+Run -File "git" -CommandArgs @("push", "-u", "origin", "main")
 
 Write-Host "Published: https://github.com/$target"
