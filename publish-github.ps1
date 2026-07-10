@@ -24,8 +24,16 @@ function Run {
     [string[]]$CommandArgs = @()
   )
 
-  & $File @CommandArgs
-  if ($LASTEXITCODE -ne 0) {
+  $previousErrorAction = $ErrorActionPreference
+  $ErrorActionPreference = "Continue"
+  try {
+    & $File @CommandArgs
+    $exitCode = $LASTEXITCODE
+  } finally {
+    $ErrorActionPreference = $previousErrorAction
+  }
+
+  if ($exitCode -ne 0) {
     throw "Command failed: $File $($CommandArgs -join ' ')"
   }
 }
@@ -84,6 +92,12 @@ if (-not $origin) {
 }
 
 Run -File "git" -CommandArgs @("branch", "-M", "main")
-Run -File "git" -CommandArgs @("push", "-u", "origin", "main")
+try {
+  Run -File "git" -CommandArgs @("push", "-u", "origin", "main")
+} catch {
+  Write-Warning "git push failed. Falling back to GitHub API publishing."
+  $apiScript = Join-Path $PSScriptRoot "publish-github-api.ps1"
+  & $apiScript -RepoName $RepoName -Visibility $Visibility -Owner $Owner -Branch "main"
+}
 
 Write-Host "Published: https://github.com/$target"

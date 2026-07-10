@@ -64,3 +64,5 @@ Optional private repository:
 ```powershell
 .\publish-github.ps1 -Visibility private
 ```
+
+If `git push` cannot connect to GitHub, the script automatically falls back to `publish-github-api.ps1`, which publishes the tracked files through GitHub's API.
