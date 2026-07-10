@@ -7,6 +7,7 @@ pnpm-debug.log*
 .env
 .env.*
 !.env.example
+.gh-config/
 
 data/*.json
 data/*.tmp
@@ -19,4 +20,3 @@ Thumbs.db
 
 coverage/
 .nyc_output/
-
