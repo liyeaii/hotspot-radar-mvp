@@ -1,0 +1,199 @@
+{
+  "keywords": [
+    {
+      "id": "a7276abd-4168-4046-ae81-61d50d465a69",
+      "keyword": "ai coding",
+      "scope": "AI programming",
+      "intervalMinutes": 60,
+      "enabled": true,
+      "createdAt": "2026-07-10T14:23:35.409Z",
+      "lastScannedAt": "2026-07-10T17:33:38.906Z",
+      "nextRunAt": "2026-07-10T18:33:38.906Z"
+    },
+    {
+      "id": "8ac25c0b-d4fc-4b9f-9f61-2f10a9fb5448",
+      "keyword": "gpt",
+      "scope": "AI programming",
+      "intervalMinutes": 60,
+      "enabled": true,
+      "createdAt": "2026-07-10T14:23:22.930Z",
+      "lastScannedAt": "2026-07-10T17:33:46.926Z",
+      "nextRunAt": "2026-07-10T18:33:46.926Z"
+    }
+  ],
+  "discoveries": [
+    {
+      "id": "b3856f81-71ec-468b-b9c1-487059c499ec",
+      "fingerprint": "2938ae1168bbf54d69acef03",
+      "keywordId": "8ac25c0b-d4fc-4b9f-9f61-2f10a9fb5448",
+      "keyword": "gpt",
+      "scope": "AI programming",
+      "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+      "source": "OpenAI News",
+      "sourceType": "official",
+      "summary": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work.",
+      "publishedAt": "Thu, 09 Jul 2026 13:00:00 GMT",
+      "discoveredAt": "2026-07-10T17:25:46.767Z",
+      "analysis": {
+        "relevance": 66,
+        "heat": 46,
+        "authenticityScore": 69,
+        "authenticity": "needs-review",
+        "reasons": [
+          "keyword match",
+          "keyword token match",
+          "official feed match",
+          "trusted source: OpenAI News",
+          "Microsoft claim outside known official domains"
+        ]
+      }
+    },
+    {
+      "id": "ebca0bf6-5596-4efa-9e1b-cce186a7f285",
+      "fingerprint": "c4846a1644c80e4339afaa34",
+      "keywordId": "8ac25c0b-d4fc-4b9f-9f61-2f10a9fb5448",
+      "keyword": "gpt",
+      "scope": "AI programming",
+      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6",
+      "source": "OpenAI News",
+      "sourceType": "official",
+      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
+      "publishedAt": "Thu, 09 Jul 2026 10:00:00 GMT",
+      "discoveredAt": "2026-07-10T17:25:46.767Z",
+      "analysis": {
+        "relevance": 66,
+        "heat": 46,
+        "authenticityScore": 87,
+        "authenticity": "verified",
+        "reasons": [
+          "keyword match",
+          "keyword token match",
+          "official feed match",
+          "trusted source: OpenAI News"
+        ]
+      }
+    },
+    {
+      "id": "98918226-5a6b-41ee-a7fc-730ab280f2ab",
+      "fingerprint": "a6ef0a930d468a9265af7e14",
+      "keywordId": "8ac25c0b-d4fc-4b9f-9f61-2f10a9fb5448",
+      "keyword": "gpt",
+      "scope": "AI programming",
+      "title": "ChatGPT is now a partner for your most ambitious work",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+      "source": "OpenAI News",
+      "sourceType": "official",
+      "summary": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.",
+      "publishedAt": "Thu, 09 Jul 2026 10:00:00 GMT",
+      "discoveredAt": "2026-07-10T17:25:46.767Z",
+      "analysis": {
+        "relevance": 66,
+        "heat": 46,
+        "authenticityScore": 87,
+        "authenticity": "verified",
+        "reasons": [
+          "keyword match",
+          "keyword token match",
+          "official feed match",
+          "trusted source: OpenAI News"
+        ]
+      }
+    },
+    {
+      "id": "b3c6c376-4f20-44dc-9f74-ed93e10ec262",
+      "fingerprint": "dd6a731f315261743b032fd3",
+      "keywordId": "8ac25c0b-d4fc-4b9f-9f61-2f10a9fb5448",
+      "keyword": "gpt",
+      "scope": "AI programming",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "url": "https://openai.com/index/bio-bug-bounty",
+      "source": "OpenAI News",
+      "sourceType": "official",
+      "summary": "Details about the OpenAI Bio Bounty program",
+      "publishedAt": "Thu, 09 Jul 2026 10:00:00 GMT",
+      "discoveredAt": "2026-07-10T17:25:46.767Z",
+      "analysis": {
+        "relevance": 66,
+        "heat": 46,
+        "authenticityScore": 87,
+        "authenticity": "verified",
+        "reasons": [
+          "keyword match",
+          "keyword token match",
+          "official feed match",
+          "trusted source: OpenAI News"
+        ]
+      }
+    },
+    {
+      "id": "2df546cc-b4c1-424e-b32b-a1ee6dc822d5",
+      "fingerprint": "0f1fe186faf2f4c7fb814252",
+      "keywordId": "8ac25c0b-d4fc-4b9f-9f61-2f10a9fb5448",
+      "keyword": "gpt",
+      "scope": "AI programming",
+      "title": "GPT 5.6 Sol, Luna, and Terra now available on AI Gateway",
+      "url": "https://vercel.com/changelog/gpt-5-6-now-available-on-ai-gateway",
+      "source": "Vercel Blog",
+      "sourceType": "vendor",
+      "summary": "GPT 5.6 is now available on AI Gateway in three models: Sol, Terra, and Luna.GPT 5.6 from OpenAI is now available on AI Gateway in a limited preview, across three models: Sol, Terra, and Luna. All three are stronger at agentic work across coding, biology, and cybersecurity, and are more token-efficient than the previous generation.Sol (openai/gpt-5.6-sol): the flagship, and the most capable of the three.Terra (openai",
+      "publishedAt": "2026-07-09T00:00:00.000Z",
+      "discoveredAt": "2026-07-10T17:25:46.772Z",
+      "analysis": {
+        "relevance": 54,
+        "heat": 38,
+        "authenticityScore": 61,
+        "authenticity": "needs-review",
+        "reasons": [
+          "keyword match",
+          "keyword token match",
+          "trusted source: Vercel Blog",
+          "OpenAI claim outside known official domains"
+        ]
+      }
+    }
+  ],
+  "settings": {
+    "retentionHours": 1,
+    "enabledSources": [
+      "google-news",
+      "official-feeds",
+      "arxiv"
+    ]
+  },
+  "sources": [
+    {
+      "id": "google-news",
+      "name": "Google News",
+      "description": "新闻聚合，适合第一时间发现传播中的热点。"
+    },
+    {
+      "id": "official-feeds",
+      "name": "官方/厂商博客",
+      "description": "OpenAI、Anthropic、Google、GitHub、Microsoft、Hugging Face 等 RSS。"
+    },
+    {
+      "id": "hacker-news",
+      "name": "Hacker News",
+      "description": "开发者社区讨论和早期信号。"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "description": "仓库更新、开源项目和开发工具趋势。"
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "description": "论文和研究动态。"
+    },
+    {
+      "id": "devto",
+      "name": "DEV Community",
+      "description": "开发者文章和实践分享。"
+    }
+  ],
+  "createdAt": "2026-07-10T07:15:36.170Z",
+  "updatedAt": "2026-07-10T17:33:46.926Z"
+}
